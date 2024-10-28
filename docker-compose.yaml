@@ -1,0 +1,8 @@
+services:
+  duck-ddns:
+    image: duckdns-updater:latest
+    container_name: duckdns_updater
+    restart: unless-stopped
+    environment:
+      - DOMAIN="<your domain here>"
+      - TOKEN="<your token here>
